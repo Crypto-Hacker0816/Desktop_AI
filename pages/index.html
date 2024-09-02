@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mirada AI</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="../libs/const.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="../libs/chatprocess.js"></script>
+    <script src="../libs/navigation.js"></script>
+  </head>
+  <body>
+    <div class="content">
+        <div class="header">
+            <div>
+                <img src="../resources/X.png" alt="Image Button" id="closeBtn" />
+            </div>
+            <div class="logo">
+                <img 
+                src="../resources/logo_1.png" 
+                alt="Logo" 
+            />
+            </div>
+            <div class="ui-change">
+                <img 
+                    src="../resources/fullscreen.png" 
+                    alt="Full Screen" 
+                    id="fullscreenBtn"
+                >
+                <img src="../resources/switch.png" alt="Switch Button" id="switchBtn"/>
+            </div>
+        </div>
+        <div class="message">
+
+        </div>
+        <div class="footer">
+            <div class="message-input">
+                <img src="../resources/mic.png" alt="Full Screen" id="recordBtn"/>
+                <div class="body-msg">
+                    <input placeholder="Enter message" id="messageContent">
+                    <div id="sendMsgBtn" class="sendMsgBtn"></div>
+                </div>
+            </div>
+            <div class="setting-bar">
+                <div class="setting-element">
+                    <img 
+                        src="../resources/note.png" 
+                        width="32px" 
+                        height="32px" 
+                        alt="note"
+                        style="margin-right: -34px;"
+                    />
+                    <span>Notes</span>
+                </div>
+                <div class="setting-element">
+                    <img 
+                        src="../resources/mice.png" 
+                        width="32px" 
+                        height="32px" 
+                        alt="note"
+                        style="margin-right: -34px;"
+                    />
+                    <span>Speech Mode</span>
+                </div>
+                <div class="setting-element">
+                    <img 
+                        src="../resources/screenshot.png" 
+                        width="32px" 
+                        height="32px" 
+                        alt="note"
+                        style="margin-right: -34px;"
+                    />
+                    <span>Screenshot</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

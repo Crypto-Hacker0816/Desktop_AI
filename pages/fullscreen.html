@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="../libs/navigation.js"></script>
+    </head>
+    <body>
+        <div class="fullscreen-content">
+            <div class="nav-bar">
+                <div class="nav-header">
+                    <img src="../resources/logo_1.png" width="60%" height="5%"/>
+                    <div id="collapseBtn" class="collapseBtn">&nbsp;&lt;</div>
+                </div>
+                <div class="nav-content" id="nav-content">
+                    <div class="navContentDiv" id="nav-chat" style="background-color: #3d3d3d;">
+                        <img src="../resources/chat.png" />
+                        <span style="margin-left: 20px;">Chat</span>
+                    </div>
+                    <div class="navContentDiv" id="nav-image">
+                        <img src="../resources/image.png" />
+                        <span style="margin-left: 20px;">Image generation</span>
+                    </div>
+                    <div class="navContentDiv" id="nav-notes">
+                        <img src="../resources/note.png" />
+                        <span style="margin-left: 20px;">Notes</span>
+                    </div>
+                </div>
+                <div class="nav-setting" id="nav-setting">
+                    <div class="navSettingDiv">
+                        <img src="../resources/upgrade.png" />
+                        <span style="margin-left: 20px;">Upgrade</span>
+                    </div>
+                    <div class="navSettingDiv">
+                        <img src="../resources/setting.png" />
+                        <span style="margin-left: 20px;">Settings</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-header">
+                    <img src="../resources/logo_1.png" width="20%" height="5%"/>
+                </div>
+                <div class="content-body">
+                    <div class="chat-page nav-page" id="nav-chat-page">
+                        <div id="collapseSidebarBtn" class="collapseSidebarBtn">&nbsp;&lt;</div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <div class="chat-initial">
+                                <div class="initial-question-1">
+                                    <img src="../resources/qchat.png" width="25px" height="25px"/>
+                                    <p style="margin-top: 45px;">What can I do</p>
+                                    <p>with this AI chat?</p>
+                                </div>
+                                <div class="initial-question-2">
+                                    <p>Try these sample questions</p>
+                                    <div>
+                                        <img src="../resources/head.png" width="25px" height="25px"/>
+                                        <p style="margin-top: 40px;">What is Mirada AI?</p>
+                                    </div>
+                                </div>
+                                <div class="initial-question-3">
+                                    <img src="../resources/qattach.png" width="25px" height="25px"/>
+                                    <p style="margin-top: 20px;">Why is</p>
+                                    <p>decentralization</p>
+                                    <p>for AI?</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="full-screen-message-input">
+                            <div class="part">
+                                <img 
+                                    src="../resources/mic.png" 
+                                    style="
+                                        position: absolute;
+                                        top: 7%;
+                                        left: 1%;
+                                    "
+                                />
+                                <input type="text" placeholder="Enter message">
+                                <img 
+                                    src="../resources/sendMsg.png" 
+                                    style="
+                                        position: absolute;
+                                        top: 12%;
+                                        left: 94%;
+                                        background-color: #FFFFFF;
+                                        border-radius: 5px;
+                                    "
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="generation-page hidden-page nav-page" id="nav-image-page">
+                        <div class="full-screen-prompt-input">
+                            <div class="part">
+                                <img 
+                                    src="../resources/mic.png" 
+                                    style="
+                                        position: absolute;
+                                        top: 73%;
+                                        left: 20%;
+                                    "
+                                />
+                                <input type="text" placeholder="Enter message">
+                                <img 
+                                    src="../resources/sendMsg.png" 
+                                    style="
+                                        position: absolute;
+                                        top: 74%;
+                                        left: 76%;
+                                        background-color: #FFFFFF;
+                                        border-radius: 5px;
+                                    "
+                                />
+                            </div>
+                        </div>
+                        <hr style="width: 1143px; margin-top: 50px; border: 1px solid #666666;">
+                        <div style="display: flex; justify-content: center; align-items: center; margin-top:20%;">
+                            <p style="color: #FBFBFB; font-size: 20px;">Get started by entering a description above!</p>
+                        </div>
+                    </div>
+                    <div class="note-page hidden-page nav-page" id="nav-notes-page">
+                        <div class="note-page-body">
+                            <div class="note-content">
+                                <p>Your notes will appear here</p>
+                                <p style="margin-top: 5%;">You can use voice to make notes through menu</p>
+                                <p>in the top right, or write them here</p>
+                            </div>
+                            <div class="note-create">
+                                <div class="newNote" id="newNote">
+                                    <img src="../resources/newChat.png" />
+                                    <span style="margin-left: 20px;">New Note</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="side-bar">
+                <div class="newChat" id="newChat">
+                    <img src="../resources/newChat.png" />
+                    <span style="margin-left: 20px;">New Chat</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

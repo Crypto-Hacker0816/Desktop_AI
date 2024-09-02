@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="/">
+    <file>keyboard.png</file>
+    <file>image 18.png</file>
+    <file>Rectangle 24.png</file>
+    <file>5 1.png</file>
+    <file>5 1.png</file>
+    <file>image 3.png</file>
+    <file>image 4.png</file>
+    <file>image 5.png</file>
+    <file>image 6.png</file>
+    <file>image 7.png</file>
+    <file>image 8.png</file>
+    <file>image 27.png</file>
+    <file>X.png</file>
+  </qresource>
+</RCC>
