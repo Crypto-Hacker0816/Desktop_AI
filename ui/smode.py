@@ -15,7 +15,7 @@ class SModeWindow(QWidget):
         path.addRoundedRect(QRectF(self.rect()), radius, radius)
         mask = QRegion(path.toFillPolygon().toPolygon())
         self.setMask(mask)
-        self.setGeometry(QDesktopWidget().availableGeometry().width() - self.width(), 0, self.width(), self.height())
+        # self.setGeometry(QDesktopWidget().availableGeometry().width() - self.width(), 0, self.width(), self.height())
 
         self.ui.smodeBtn.clicked.connect(self.switchUi)
         self.ui.closeBtn.clicked.connect(self.close)
