@@ -22,12 +22,12 @@ class LoginWindow(QWidget):
         self.ui.closeBtn.clicked.connect(self.close)
     
     def connectWeb(self):
-        # authorization_base_url = 'http://localhost:3000/api/auth/authorize'
-        # token_url = 'http://localhost:3000/api/auth/token'
+        authorization_base_url = 'http://localhost:3000/api/auth/authorize'
+        token_url = 'http://localhost:3000/api/auth/token'
 
-        # oauth = OAuth2Session(CLIENT_ID)
+        oauth = OAuth2Session(CLIENT_ID)
 
-        # # Redirect the user to the authorization URL
-        # authorization_url, state = oauth.authorization_url(authorization_base_url)
-        # print('Please go here and authorize:', authorization_url)
+        # Redirect the user to the authorization URL
+        authorization_url, state = oauth.authorization_url(authorization_base_url)
+        print('Please go here and authorize:', authorization_url)
         print("HELLO WORLD")
