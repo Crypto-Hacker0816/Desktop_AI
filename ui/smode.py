@@ -6,7 +6,9 @@ from PyQt5.QtGui import QPainterPath, QRegion
 class SModeWindow(QWidget):
     def __init__(self, parent=None):
         super(SModeWindow, self).__init__()
+
         self.ui = Ui_smode()
+        
         self.ui.setupUi(self)
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.parent = parent

@@ -38,6 +38,7 @@ const createWindow = () => {
 
 
 app.whenReady().then(() => {
+    
     appIcon = new Tray('resources/tray.png')
     const contextMenu = Menu.buildFromTemplate([
         { 

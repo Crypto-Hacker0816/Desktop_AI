@@ -7,6 +7,7 @@ class MyList(QScrollArea):
         super().__init__()
         self._widget = QWidget()
         self._layout = QVBoxLayout()
+        
 
         self._widget.setLayout(self._layout)
         self.setWidget(self._widget)
