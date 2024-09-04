@@ -16,7 +16,7 @@ class Ui_login(object):
         login.setObjectName("login")
         login.resize(619, 678)
         login.setStyleSheet("QWidget {\n"
-"    border-radius : \"10px\";\n"
+"    border-radius : \"12px\";\n"
 "}")
         self.label = QtWidgets.QLabel(login)
         self.label.setGeometry(QtCore.QRect(0, 0, 619, 678))
@@ -26,6 +26,7 @@ class Ui_login(object):
         self.label.setText("")
         self.label.setObjectName("label")
         self.logoLbl = QtWidgets.QLabel(login)
+        
         self.logoLbl.setGeometry(QtCore.QRect(168, 50, 272, 99))
         self.logoLbl.setStyleSheet("QLabel {\n"
 "    \n"
