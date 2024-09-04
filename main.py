@@ -161,10 +161,13 @@ class MainWindow(QWidget):
 
         self.gptProcess.moveToThread(self.thread)
         self.thread.started.connect(self.gptProcess.run)
+        
         self.gptProcess.messageReceived.connect(self.handleMessage)
         self.gptProcess.finished.connect(self.thread.quit)
+
         self.gptProcess.finished.connect(self.gptProcess.deleteLater)
         self.thread.finished.connect(self.thread.deleteLater)
+
         self.gptProcess.finished.connect(self.finishGPT)
 
         self.thread.start()

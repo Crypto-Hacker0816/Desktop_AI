@@ -19,7 +19,7 @@ class Ui_Form(object):
 "    background-color :  rgb(47, 47, 47);\n"
 "}")
         self.widget = QtWidgets.QWidget(Form)
-        self.widget.setGeometry(QtCore.QRect(0, 8, 456, 61))
+        self.widget.setGeometry(QtCore.QRect(0, 8, 456, 59))
         self.widget.setStyleSheet("QWidget {\n"
 "    background-color : \"#666666\";\n"
 "    color : \"#FFFFFF\";\n"
